@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page icon -->
+    <link rel="shortcut icon" href="./Icons/boxes-stacked-solid-full.svg" type="image/x-icon">
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- Fontawesome file -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- CSS file style -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Smart Inventory</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar navbar-expand-lg py-1 container ">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-boxes-stacked" style="color: #ffffff;"></i>
+                <span>Smart Inventory</span>
+            </a>
+
+            <section>
+                <button type="button" id="import"  class="btn btn-outline-light">
+                    <i class="fa-solid fa-upload" ></i>
+                    Import
+            </button>
+            <button type="button" id="mode-switch"  class="btn btn-outline-light" onclick="switchMode()">
+                
+            </button>
+        </section>
+        </nav>
+    </header>
+
+    <main class="py-4 px-3 ">
+        <section class="add-product col-sm-12 col-lg-4 col-md-4">
+
+            <section class="section-header d-flex align-items-center ps-3 gap-2">
+                <i class="fa-solid fa-circle-plus"></i>
+                    <h4 class="pt-1">
+                        Add New Product
+                    </h4>
+            </section>
+
+        <section class="px-3 py-3 form-add-product">
+        
+            <div id="alertPlaceholder" class="px-3 my-2"></div>
+
+            <form id="productAddForm">
+                <div class="mb-3">
+                    <label for="Product-name" class="form-label">
+                        <i class="fa-solid fa-tag"></i>  Product Name *
+                    </label>
+                    <input type="text" id="Product-name" class="form-control">
+                </div>
+
+            <div class="mb-3">
+                <label for="product-price" class="form-label">
+                    <i class="fa-solid fa-dollar-sign"></i> Product Price *
+                </label>
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input type="number" id="product-price" class="form-control">
+                </div>
+            </div>
+
+                <div class="mb-3">
+                    <label for="product-category" class="form-label">
+                        <i class="fa-solid fa-list"></i> Category *
+                    </label>
+                    <select name="Category" id="product-category" class="form-select">
+                        <option value="" disabled selected hidden>Select a category</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Books">Books</option>
+                        <option value="Home & Garden">Home & Garden</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Food & Beverages">Food & Beverages</option>
+                        <option value="Healthy & Beauty">Healthy & Beauty</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="product-description" class="form-label">
+                        <i class="fa-solid fa-align-left"></i> Description *
+                    </label>
+                    <textarea name="description" id="product-description" class="form-control" rows="4"></textarea>
+                </div>
+
+                <div class="add-product-button">
+                    <button type="button" id="add-update-btn" class="btn btn-primary" onclick="addProduct()">
+                        <i class="fa-solid fa-plus"></i> Add Product
+                    </button>
+                </div>
+            </form>
+        </section>
+        </section>
+
+        <section class="display-product col-sm-12 col-lg-8 col-md-8 product-services">
+            <div class="d-flex align-items-center justify-content-between product-services-header px-3">
+                <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-boxes-stacked"></i> 
+                <h4 class="pt-1">
+                    Products
+                </h4>
+                </div>
+                <div class="product-number" id="product-number">
+                    0 Products
+                </div>
+            </div>
+
+            <div class="product-services-actions">
+                <div class="d-flex gap-4 py-3 px-3">
+                    <div class="input-group w-50">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="search" class="form-control" aria-label="Search" placeholder="Search products..." id="product-search">
+                    </div>
+
+                    <div class="w-50">
+                        <select name="Category" class="form-select" id="filter-category" onchange="filterByCategory()">
+                        <option value="All Categories">All Categories</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Books">Books</option>
+                        <option value="Home & Garden">Home & Garden</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Food & Beverages">Food & Beverages</option>
+                        <option value="Healthy & Beauty">Healthy & Beauty</option>
+                        <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div id="display-products">
+                            
+                    </div>
+                </div>
+        </div>
+        </section>
+    </main>
+
+
+
+<!-- Link JS Files -->
+    <script src="./JS/main.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

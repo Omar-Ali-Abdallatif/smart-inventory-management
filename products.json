@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Wireless Mouse",
+    "price": 25,
+    "category": "Electronics",
+    "description": "Ergonomic wireless mouse with USB receiver."
+  },
+  {
+    "name": "Bluetooth Headphones",
+    "price": 60,
+    "category": "Electronics",
+    "description": "Over-ear headphones with noise isolation."
+  },
+  {
+    "name": "Cotton T-Shirt",
+    "price": 15,
+    "category": "Clothing",
+    "description": "Soft cotton t-shirt available in multiple sizes."
+  },
+  {
+    "name": "Denim Jacket",
+    "price": 45,
+    "category": "Clothing",
+    "description": "Classic blue denim jacket for everyday wear."
+  },
+  {
+    "name": "JavaScript Basics",
+    "price": 18,
+    "category": "Books",
+    "description": "Beginner-friendly book for learning JavaScript."
+  },
+  {
+    "name": "Clean Code",
+    "price": 35,
+    "category": "Books",
+    "description": "Practical guide to writing better and cleaner code."
+  },
+  {
+    "name": "Garden Tool Set",
+    "price": 30,
+    "category": "Home & Garden",
+    "description": "Durable hand tools for home gardening tasks."
+  },
+  {
+    "name": "LED Desk Lamp",
+    "price": 22,
+    "category": "Home & Garden",
+    "description": "Adjustable LED lamp with warm and cool light modes."
+  },
+  {
+    "name": "Football",
+    "price": 20,
+    "category": "Sports",
+    "description": "Standard size football suitable for training and matches."
+  },
+  {
+    "name": "Yoga Mat",
+    "price": 28,
+    "category": "Sports",
+    "description": "Non-slip exercise mat for yoga and fitness workouts."
+  },
+  {
+    "name": "Organic Coffee",
+    "price": 12,
+    "category": "Food & Beverages",
+    "description": "Premium roasted organic coffee beans."
+  },
+  {
+    "name": "Green Tea Pack",
+    "price": 9,
+    "category": "Food & Beverages",
+    "description": "Refreshing green tea bags with natural flavor."
+  },
+  {
+    "name": "Face Cleanser",
+    "price": 14,
+    "category": "Healthy & Beauty",
+    "description": "Gentle daily cleanser suitable for most skin types."
+  },
+  {
+    "name": "Hair Shampoo",
+    "price": 11,
+    "category": "Healthy & Beauty",
+    "description": "Nourishing shampoo for soft and healthy-looking hair."
+  },
+  {
+    "name": "Notebook",
+    "price": 5,
+    "category": "Other",
+    "description": "A5 notebook with ruled pages for notes and planning."
+  }
+]
